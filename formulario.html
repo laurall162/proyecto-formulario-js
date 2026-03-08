@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de creación de cuenta</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+<body id="pagina">
+
+    <h1>Formulario de creación de cuenta</h1>
+
+    <p>
+        <a href="index.html">Volver a la página principal</a>
+    </p>
+
+    <form id="formulario" novalidate>
+        <p>
+            <label for="nombre">Nombre *</label><br>
+            <input type="text" id="nombre" name="nombre">
+            <br><span id="errorNombre" class="error"></span>
+        </p>
+
+        <p>
+            <label for="apellido1">Apellido 1 *</label><br>
+            <input type="text" id="apellido1" name="apellido1">
+            <br><span id="errorApellido1" class="error"></span>
+        </p>
+
+        <p>
+            <label for="apellido2">Apellido 2</label><br>
+            <input type="text" id="apellido2" name="apellido2">
+            <br><span id="errorApellido2" class="error"></span>
+        </p>
+
+        <p>
+            <label for="fechaNacimiento">Fecha de nacimiento *</label><br>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento">
+            <br><span id="errorFecha" class="error"></span>
+        </p>
+
+        <p>
+            <label for="correo">Correo electrónico *</label><br>
+            <input type="email" id="correo" name="correo">
+            <br><span id="errorCorreo" class="error"></span>
+        </p>
+
+        <p>
+            <label for="contrasena">Contraseña *</label><br>
+            <input type="password" id="contrasena" name="contrasena">
+            <br><span id="errorContrasena" class="error"></span>
+        </p>
+
+        <p>
+            <label for="repetirContrasena">Repetir contraseña *</label><br>
+            <input type="password" id="repetirContrasena" name="repetirContrasena">
+            <br><span id="errorRepetirContrasena" class="error"></span>
+        </p>
+
+        <p>
+            <button type="submit">Crear cuenta</button>
+        </p>
+
+        <p id="mensajeExito"></p>
+    </form>
+
+    <script src="js/validaciones.js"></script>
+</body>
+</html> 
